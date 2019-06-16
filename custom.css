@@ -30,11 +30,13 @@ nav a {
    text-align: center;
    text-decoration: none;
    float: left;
-   text-color: #000000;
 }
 
 nav a:hover {
-	background-color: #99E164;
+  background-color: #99E164;
+  color: #1D3386
+
+}
 
 li a {
 	background: none;
