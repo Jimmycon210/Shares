@@ -13,23 +13,57 @@
 <style>
 div.a {
   text-align: center;
+  height: 100%;
+  margin: 0;
 }
 body, html {
 	height: 100%;
 	margin: 0;
 }
+
+.bg { 
+  /* The image used */
+  background-image: url("StocksWallpaper.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color:blue;
+}
+
+.caption span.border {
+  background-color: #99E164;
+  color: #1D3386;
+  padding: 17px;
+  font-size: 23px;
+  
+}
+
 </style>
 <div class="a">
   <nav>
     <a href = "./index.html">Home</a>
     <a href = "./stocks.html">Stocks  </a>
     <a href = "./aboutUs.html">About Us</a>
-    <a>These Don't Work yet! Clicking them brings you nowhere!</a>
   </nav>
-
+  <div class="bg">
   <img src = "./SharesLogoTemp.PNG" height = 75, width = 60/>
-  <h1>Welcome to Shares!</h1>
-  Hello, World!
+    <div class="caption">
+      <span class="border">Welcome to Shares!</span>
+    </div>
+  </div>
 </div>
 <script src="main.js"></script>
 </body>
