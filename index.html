@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
 <style>
 div.a {
   text-align: center;
@@ -32,6 +34,13 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fb {
+  text-align: left;
+  padding-left: 40px;
+  width: 355px;
+  height: 300px;
 }
 
 .caption {
@@ -61,7 +70,17 @@ body, html {
   <div class="bg">
   <img src = "./SharesLogoTemp.PNG" height = 75, width = 60/>
     <div class="caption">
-      <span class="border">Welcome to Shares!</span>
+      <p>
+        <span class="border">Welcome to Shares!</span>
+        <br>
+        <br>
+        <button type="button" onclick="location.href='https://www.instagram.com/shares.co/';">Instagram</button>
+        <button type="button" onclick="location.href='https://www.facebook.com/sharestech.co/';">Facebook</button>
+        <br>
+      </p>
+    </div>
+    <div class="fb">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsharestech.co%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>  
     </div>
   </div>
 </div>
